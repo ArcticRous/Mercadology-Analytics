@@ -1,0 +1,199 @@
+
+<h1>Empresa <small>Nombre del Héroe</small> </h1>
+<hr>
+
+
+<div class="row text-right tablaCuentas">
+  <div class="col">
+    <button class="btn btn-danger"
+            routerLink="/cuentas">
+      <i class="fa fa-arrow-left"></i>
+      Regresar
+    </button>
+  </div>
+</div>
+
+
+
+<div class="row animated fadeIn faster ">
+  <div class="col">
+
+    <form (ngSubmit)="guardar( f )"
+          #f="ngForm">
+
+      <div class="form-group">
+        <label>Firebase ID</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Firebase ID"
+
+               name="id"
+               disabled="disabled">
+        <small class="form-text text-muted">Este campo es autogenerado</small>
+      </div>
+
+
+      <div class="form-group">
+          <label>Nombre</label>
+          <input type="text"
+                 class="form-control"
+                 placeholder="Nombre de la empresa"
+                 name="nombre"
+                 required>
+      </div>
+
+      <div class="form-group">
+          <label>Dominio</label>
+          <input type="text"
+                 class="form-control"
+                 name="dominio"
+                 placeholder="dominio.com">
+    </div>
+
+     <div class="form-group">
+          <label>IP</label>
+          <input type="text"
+                 class="form-control"
+                 name="dirip"
+                 placeholder="192.168.10.2">
+    </div>
+    <div class="form-group">
+          <label>base de datos: Nombre</label>
+          <input type="text"
+                 class="form-control"
+                 name="nomdb"
+                 placeholder="wp_database">
+    </div>
+    <div class="form-group">
+          <label>base de datos: Usuario</label>
+          <input type="text"
+                 class="form-control"
+                 name="usedb"
+                 placeholder="wp_user">
+    </div>
+    <div class="form-group">
+          <label>base de datos: Contraseña</label>
+          <input type="text"
+                 class="form-control"
+                 name="condb"
+                 placeholder="wp_pass">
+    </div>
+    <div class="form-group">
+          <label>FTP USER</label>
+          <input type="text"
+                 class="form-control"
+                 name="ftpuse"
+                 placeholder="ejemplo@gmail.com" >
+    </div>
+     <div class="form-group">
+          <label>FTP PASS</label>
+          <input type="text"
+                 class="form-control"
+                 name="ftppas"
+                 placeholder="password" >
+    </div>
+     <div class="form-group">
+          <label>Hospedaje</label>
+          <input type="text"
+                 class="form-control"
+                 name="hosnam"
+                 placeholder="password" >
+    </div>
+      <div class="form-group">
+          <label>hospedaje: Usuario</label>
+          <input type="text"
+                 class="form-control"
+                 name="hosuse"
+                 placeholder="usuario" >
+    </div>
+     <div class="form-group">
+          <label>hospedaje: Contraseña</label>
+          <input type="text"
+                 class="form-control"
+                 name="hospas"
+                 placeholder="password" >
+    </div>
+    <div class="form-group">
+          <label>Dominio: Ubicacion</label>
+          <input type="text"
+                 class="form-control"
+                 name="domubi"
+                 placeholder="password" >
+    </div>
+      <div class="form-group">
+          <label>Dominio: Usuario</label>
+
+          <input type="text"
+                 class="form-control"
+                 name="domuse"
+                 placeholder="usuario" >
+    </div>
+     <div class="form-group">
+          <label>Dominio: Contraseña</label>
+
+          <input type="text"
+                 class="form-control"
+                 name="dompas"
+                 placeholder="password" >
+    </div>
+    <div class="form-group">
+          <label>Correo de cuenta:</label>
+          <input type="text"
+                 class="form-control"
+                 name="cornam"
+                 placeholder="Correo de cuenta" >
+    </div>
+    <div class="form-group">
+          <label>Correo: Contraseña</label>
+          <input type="text"
+                 class="form-control"
+                 name="corpas"
+                 placeholder="password de la cuenta" >
+    </div>
+     <div class="form-group">
+          <label>Vencimiento SSL</label>
+          <input type="date"
+                 class="form-control"
+                 name="venssl"
+                 placeholder="Vencimiento" >
+    </div>
+
+
+      <div class="form-group fa">
+        <label>Estado</label>
+        <br>
+
+        <button
+                class="btn btn-outline-success w-50" type="button">
+          <i class="fa fa-smile-wink"></i>
+          Activo
+        </button>
+
+        <button
+                class="btn btn-outline-danger w-50" type="button">
+            <i class="fa fa-dizzy"></i>
+          Inactivo
+        </button>
+
+      </div>
+
+
+
+      <hr>
+      <div class="form-group text-center">
+        <button type="submit"
+                class="btn btn-primary w-25">
+          <i class="fa fa-save"></i>
+          Guardar
+        </button>
+      </div>
+
+
+    </form>
+
+
+  </div>
+</div>
+
+
+

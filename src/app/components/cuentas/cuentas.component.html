@@ -2,21 +2,27 @@
 
 </app-header>
 
-<div class="contGeneral">
+<div class="contGeneral ">
     <table class="table text-white tablaCuentas">
-        <thead>
+        <thead class="thead-dark">
+                <td class="col-2"><button routerLink="/cuenta/crear" class="btn btn-primary">Crear nuevo</button></td>
             <tr>
                 <th scope="col">#</th>
+                <th scope="col">empresa</th>
                 <th scope="col">dominio</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">ver</th>
+                <th scope="col">editar</th>
+                <th scope="col">eliminar</th>
+
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td class="col-2"><button class="btn btn-warning">Modificar</button></td>
+                <td>CuadrosCuadros</td>
+                <td>CuadrosCuadros.com</td>
+                <td class="col-2"><button class="btn btn-primary">Ver</button></td>
+                <td class="col-2"><button class="btn btn-secondary">Modificar</button></td>
                 <td class="col-2">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -38,56 +44,23 @@
                     </div>
                 </td>
             </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td class="col-2"><button class="btn btn-warning">Modificar</button></td>
-                <td class="col-2">
-                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td class="col-2"><button class="btn btn-warning">Modificar</button></td>
-                <td class="col-2">
-                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </td>
-            </tr>
+
         </tbody>
     </table>
+    <div
+     class="alert alert-warning text-center mt-3 animated fadeIn faster tablaCuentas" >
+    <h4 class="alert-heading">No hay registros</h4>
+    <p>
+      <i class="fa fa-exclamation fa-2x"></i>
+    </p>
+</div>
+    <div class="alert alert-info text-center mt-3 animated fadeIn faster tablaCuentas">
+  <h4 class="alert-heading">Cargando</h4>
+  <p>
+    <i class="fa fa-sync-alt fa-spin fa-2x"></i>
+  </p>
+  <p class="mb-0">
+    Espere por favor
+  </p>
+</div>
 </div>

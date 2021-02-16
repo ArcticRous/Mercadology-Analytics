@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { GeneradorReportesComponent } from './components/generador-reportes/generador-reportes.component';
+import { CuentaComponent } from './components/cuenta/cuenta.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GeneradorReportesComponent } from './components/generador-reportes/gene
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    GeneradorReportesComponent
+    GeneradorReportesComponent,
+    CuentaComponent
   ],
   imports: [
     BrowserModule,
